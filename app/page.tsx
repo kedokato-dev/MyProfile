@@ -10,6 +10,9 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ExternalLink, Code2 } from "lucide-react";
 import Image from "next/image";
 
+import IntroScreen from "@/components/IntroScreen";
+import MusicPlayer from "@/components/MusicPlayer";
+
 const PROJECTS = [
   {
     title: "MyVinmec – Trợ lý sức khỏe",
@@ -44,6 +47,8 @@ const PROJECTS = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-gray-300 overflow-x-hidden selection:bg-neon-purple selection:text-white">
+      <IntroScreen />
+      <MusicPlayer />
       <div className="fixed inset-0 cyber-grid z-0 pointer-events-none opacity-20" />
 
       <Navigation />
